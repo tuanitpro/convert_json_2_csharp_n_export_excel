@@ -21,7 +21,7 @@ namespace ToolConvertJson2Excel
 
                 List<MathInfo> items = JsonConvert.DeserializeObject<List<MathInfo>>(json);
 
-                IExcelExportHelper<MathInfo> excelExportHelper = new ExcelExportHelper<MathInfo>();
+                IExcelExportHelper<ClassName> excelExportHelper = new ExcelExportHelper<ClassName>();
 
                 using (Stream stream = new FileStream(fileExportName, FileMode.OpenOrCreate))
                 {
